@@ -1,27 +1,3 @@
-// NOTES
-// document.querySelectorAll("button")[6].addEventListener("click", handleClick);
-// docum.querySelector("target").addEventListener("typeOfEvent", functionAlreadyExisting)
-
-// OR USING AN ANONYMOUS FUNCTION
-// document.querySelector("target").addEventListener("typeOfEvent", function(){
-//    alert("Clicked!");
-// });
-/*
-function add (num1, num2){
-    return num1 + num2;
-}
-function multiply (num1, num2){
-    return num1 + num2;
-}
-// HIGH ORDER FUNCTIONS: they take other functions as inputs
-function cal (num1, num2, operator){
-    return operator(num1, num2);
-}
-console.log(cal(8, 9, multiply));
-*/
-
-// DRUM KIT 
-
 // Adding an eventListener to each button
 for (var index = 0; index < 7; index++) { // 7: number of drum buttons
     document.querySelectorAll("button")[index].addEventListener("click", function () {
@@ -102,4 +78,3 @@ function buttonAnimation(currentKey){
         activeButton.classList.remove("pressed");
     }, 100);
 }
-
